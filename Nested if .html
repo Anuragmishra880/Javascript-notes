@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valid() {
+            var name = document.frm.i1.value;
+            var ps = document.frm.i2.value;
+            var cps = document.frm.i3.value;
+            if (name == "" || name == null) {
+                alert("name cannot be blank")
+            }
+            else {
+                if (ps.length < 9) {
+                    alert("password is weak");
+                }
+                else if (ps != cps) {
+                    alert("password is not match");
+                }
+                else {
+                    alert("welcome");
+                }
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        name <input type="text" name="i1" id=""> <br>
+        password <input type="password" name="i2" id=""> <br>
+        confirm password <input type="password" name="i3" id=""> <br>
+        <input type="button" onclick="valid()" value="check">
+    </form>
+</body>
+
+</html>

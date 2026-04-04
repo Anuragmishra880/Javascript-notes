@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="startTime()">
+    the current time is:
+    <p id="demo"></p>
+    <script>
+        function startTime() {
+            const date = new Date();
+            document.getElementById("demo").innerHTML = date.toLocaleTimeString(); setTimeout(function () { startTime() }, 1000);
+        }
+    </script>
+</body>

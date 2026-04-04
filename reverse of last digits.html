@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse of last digit</title>
+    <script>
+        function sum() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value)
+            var s = (n1 % 10 + n2 % 10)
+            alert(s);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        n1 <input type="text" name="i1" id=""><br>
+        n2 <input type="text" name="i2" id=""><br>
+        <input type="button" value="sum" onclick="sum()">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+#name{
+    color: red;
+    border-radius: 50px;;
+
+}
+#name:hover{
+    height:20px ;
+}
+#name1{
+    color: red;
+    border-radius: 50px;;
+
+}
+#name1:active{
+    height:20px;
+}
+        button {
+            background-color: red;
+            color: rgb(196, 196, 217);
+            font-weight: bold;
+            border: 2px solid blue;
+            border-radius: 50%;
+            margin:5px ;
+cursor:grab;
+
+        }
+
+        button:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(44, 203, 8);
+          height: 50px;
+          width: 50px;
+        }
+    </style>
+    <script>
+        function msg() {
+            var n = document.frm.i1.value;
+            var ph = document.frm.i2.value;
+            if (n == "" || n == null) {
+                alert("Not Empty");
+            }
+            else {
+                if (isNaN(ph)) {
+                    alert("please enter valid phone number");
+                }
+                else {
+                    alert("welcome")
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        NAME <input type="text" name="i1" id="name" placeholder="Enter Your Name"><br><br>
+        Contact Number <input type="text" name="i2" id="name1" placeholder="Enter Phone Number"><br><br>
+      <button onclick="msg()" style="">OK</button> <button>cancel</button>
+    </form>
+</body>
+
+</html>

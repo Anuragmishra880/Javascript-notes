@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE INTEREST</title>
+    <script>
+        function SI() {
+            var p = parseInt(document.frm.i1.value);
+            var r = parseInt(document.frm.i2.value);
+            var t = parseInt(document.frm.i3.value);
+            var si = parseInt(document.frm.i4.value);
+            var si = (p * r * t) / 100;
+            frm.i4.value = si;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        PRINCIPAL AMOUNT <input type="text" name="i1" id=""><br>
+        RATE OF INTEREST <input type="text" name="i2" id=""><br>
+        TIME <input type="text" name="i3" id=""><br>
+        SIMPLE INTEREST <input type="text" name="i4" id=""><br>
+        <input type="button" value="CALCULATE" onclick="SI()">
+    </form>
+</body>
+
+</html>

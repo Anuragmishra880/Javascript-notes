@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script>
+        function msg() {
+            var Username = document.frm.i1.value;
+            var Password = document.frm.i2.value;
+
+            if (Username === "student" && Password === "bst") {
+                alert("welcome to BST");
+            }
+            else {
+                alert("Go to hell");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        Username<input type="text" name="i1"><br><br>
+        Password <input type="password" name="i2" id=""><br>
+        <input type="button" name="b1" id="" value="Sign-In" onclick="msg()">
+    </form>
+</body>

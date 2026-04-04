@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <style>
+        body {
+            background: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .n1 {
+            height: 20px;
+            width: 102px;
+            border-color: magenta;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .n1:hover {
+            width: 200px;
+            height: 40px;
+
+        }
+
+        #button1 {
+            height: auto;
+            width: auto;
+        }
+
+        #button1:hover {
+            background-color: rgb(163, 163, 163);
+            height: 30px;
+            width: 35px;
+        }
+
+        #button2 {
+            height: auto;
+            width: auto;
+        }
+
+        #button2:hover {
+            background-color: rgb(186, 134, 134);
+            height: 30px;
+            width: 35px;
+        }
+
+        #button3 {
+            height: auto;
+            width: auto;
+        }
+
+        #button3:hover {
+            background-color: wheat;
+            height: 30px;
+            width: 35px;
+        }
+
+        #button4 {
+            height: auto;
+            width: auto;
+        }
+
+        #button4:hover {
+            background: red;
+            height: 30px;
+            width: 35px;
+        }
+
+        #button5 {
+            height: auto;
+            width: auto;
+        }
+
+        #button5:hover {
+            background-color: orange;
+            height: 30px;
+            width: 35px;
+        }
+
+        #button6 {
+            height: auto;
+            width: auto;
+        }
+
+        #button6:hover {
+            background-color: blue;
+            height: 30px;
+            width: 35px;
+        }
+
+        #button7 {
+            height: auto;
+            width: auto;
+        }
+
+        #button7:hover {
+            background-color: blueviolet;
+            height: 30px;
+            width: 35px;
+        }
+
+        #button8 {
+            height: auto;
+            width: auto;
+        }
+
+        #button8:hover {
+            background-color: rgb(20, 244, 0);
+            height: 30px;
+            width: 35px;
+        }
+    </style>
+    <script>
+        function sum() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value);
+            var sum = n1 + n2;
+            frm.i3.value = sum;
+
+        }
+        function sub() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value);
+            var sub = n1 - n2;
+            frm.i3.value = sub;
+
+        }
+        function multi() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value);
+            var multi = n1 * n2;
+            frm.i3.value = multi;
+        }
+        function div() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value);
+            var div = n1 / n2;
+            frm.i3.value = div;
+        }
+        function percentage() {
+            var n1 = parseInt(document.frm.i1.value);
+            var n2 = parseInt(document.frm.i2.value);
+            var percentage = n1 * n2 / 100;
+            frm.i3.value = percentage;
+        } function squre() {
+            var n1 = parseInt(document.frm.i1.value);
+            //   var n2 = parseInt(document.frm.i2.value);
+            var squre = n1 * n1;
+            //  var squre = n2 * n2;
+            frm.i3.value = squre;
+        }
+        // function squreroot() {
+        //     var n1 = parseInt(document.frm.i1.value);
+        //     var n2 = parseInt(document.frm.i2.value);
+        //     var squreroot = n1 ;
+        // }
+        function half() {
+            var n1 = parseInt(document.frm.i1.value);
+            // var n2 = parseInt(document.frm.i2.value);
+            var half = n1 / 2;
+            frm.i3.value = half;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        number1 <input type="text" name="i1" class="n1"><br><br>
+        number2 <input type="text" name="i2" class="n1"> <br><br>
+        result <input type="text" name="i3" class="n1"><br><br>
+        <input type="button" value="+" onclick="sum()" id="button1">
+        <input type="button" value="-" onclick="sub()" id="button2">
+        <input type="button" value="*" onclick="multi()" id="button3">
+        <input type="button" value="/" onclick="div()" id="button4">
+        <input type="button" value="%" onclick="percentage()" id="button5">
+        <input type="button" value="x2" onclick="squre()" id="button6">
+        <input type="button" value="2√X" onclick="squreroot()" id="button7">
+        <input type="button" value="1/x" onclick="half()" id="button8">
+    </form>
+</body>
+
+</html>

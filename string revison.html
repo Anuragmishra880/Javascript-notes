@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cv() {
+            var name = document.frm.i1.value;
+            alert(name.toUpperCase());
+
+        }
+        function av() {
+            var name = document.frm.i2.value;
+            alert(name.charAt(2));
+
+        }
+        function dv() {
+            var name = document.frm.i3.value;
+            alert(name.trim());
+
+        }
+        function ev() {
+            var name = document.frm.i4.value;
+            alert(name.indexOf('a'));
+
+        }
+        function gv() {
+            var name = document.frm.i5.value;
+            alert(name.lastIndexOf('a'));
+
+        } function hv() {
+            var name = document.frm.i6.value;
+            alert(name.slice(2, 5));
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        Name <input type="text" name="i1" id=""><br>
+        charat <input type="text" name="i2" id=""><br>
+        trim<input type="text" name="i3" id=""><br>
+        index of <input type="text" name="i4" id=""><br>
+        last index of <input type="text" name="i5" id=""><br>
+        slice <input type="text" name="i6" id=""><br>
+        <input type="button" value="convert" onclick="cv()"><br>
+        <input type="button" value="charat" onclick="av()"><br>
+        <input type="button" value="trim" onclick="dv()"><br>
+        <input type="button" value="indexof" onclick="ev()"><br>
+        <input type="button" value="last indexof" onclick="gv()"><br>
+        <input type="button" value="slice" onclick="hv()"><br>
+    </form>
+</body>
+
+</html>

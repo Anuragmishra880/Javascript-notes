@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+
+        }
+
+        #a1 {
+            width: 150px;
+            margin-bottom: 9px;
+            color: blue;
+            border-radius: 4%;
+
+        }
+
+        .gap {
+            margin: 3px;
+            color: green;
+            border-radius: 50%;
+            font-size: large;
+
+        }
+    </style>
+    <script>
+        function msg() {
+            var n = parseInt(document.frm.i2.i1.value);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        <input type="text" name="i1" id="a1">
+        <div class="container1" name="i2">
+            <input type="button" value="AC" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="X" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="%" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="/" onclick="msg()" class="gap" name="i1">
+        </div>
+        <div class="container2">
+            <input type="button" value="7" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="8" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="9" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="*" onclick="msg()" class="gap" name="i1">
+        </div>
+        <div class="container3">
+            <input type="button" value="4" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="5" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="6" onclick="msg()" class="gap" name="i1" name="i1">
+            <input type="button" value="-" onclick="msg()" class="gap" name="i1" name="i1">
+        </div>
+        <div class="container4">
+            <input type="button" value="1" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="2" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="3" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="+" onclick="msg()" class="gap" name="i1">
+        </div>
+        <div class="container5">
+            <input type="button" value="0" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="." onclick="msg()" class="gap" name="i1">
+            <input type="button" value="=" onclick="msg()" class="gap" name="i1">
+            <input type="button" value="x2" onclick="msg()" class="gap" name="i1">
+        </div>
+    </form>
+</body>
+
+</html>

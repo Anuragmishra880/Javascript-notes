@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area</title>
+    <script>
+        function Circle() {
+            var r = parseInt(document.frm.i1.value);
+            var A = parseFloat(document.frm.i2.value);
+            var A = 3.14 * r * r;
+            frm.i2.value = A;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        radi... <input type="text" name="i1"> <br>
+        Area <input type="text" name="i2"> <br>
+        <input type="button" value="calculate" onclick="Circle()">
+    </form>
+</body>
+
+</html>

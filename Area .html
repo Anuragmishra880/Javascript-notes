@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Circle() {
+            var r = parseFloat(document.frm.i1.value);
+            var area = parseFloat(document.frm.i2.value);
+            var area = 3.14 * r * r ;
+            frm.i2.value = area;
+        }
+        // function squre() {
+        //     var s = parseFloat(documenr.frm.i3.value)
+        //     var areaofsqure = parseFloat(document.frm.i2.value);
+        //     var areaofsqure = s * s;
+        //     frm.i2.value = areaofsqure;
+        // }
+
+    </script>
+</head>
+
+<body>
+    <form name="frm">
+        Radius <input type="text" name="i1"><br>
+        Area <input type="text" name="i2"><br>
+        <!-- Side <input type="text" name="i3"><br> -->
+        <input type="button" value="Area" onclick = "Circle()"><br>
+        <!-- <input type="button" value="area" onclick="squre()"> -->
+    </form>
+</body>
+
+</html>

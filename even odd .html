@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>even odd</title>
+    <script>
+        function ev() {
+            var n = parseInt(document.frm.i1.value);
+            if (n % 2 == 0) {
+                alert("even");
+            }
+            else {
+                alert("odd");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Number <input type="text" name="i1" id=""> <br>
+        <input type="button" value="check" onclick="ev()">
+    </form>
+</body>
+</html>
