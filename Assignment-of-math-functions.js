@@ -17,3 +17,10 @@ console.log(Area)
 // Q 2)  Generate 4 Digit OTP
 
 console.log(Math.trunc((Math.random() * 9000) + 1000))
+
+// Q 3 )
+let x = 11, y = 22;
+let z = x + y + x++ + ++y + ++x + ++x;
+console.log('x=' + x)
+console.log('y=' + y)
+console.log('z=' + z)
