@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    <script src="script.js"></script>
+    <script src="pad start and end.js"></script>
+    <script src="index.js" ></script> 
+     <script src="higherorderFunction.js"></script> -->
+    <!-- <script src="map filter and reduce methos .js"></script> -->
+    <!-- <script src="localStorage.js" defer></script> -->
+    <!-- <script src="some and evey.js"></script> -->
+    <!-- <script src="spread_operator.js"></script> -->
+    <!-- <script src="rest parameter.js"></script> -->
+    <!-- <script src="append child.js" defer></script> -->
+    <script src="callbackHell.js" defer></script>
+    <!-- <style>
+        .container {
+            display: flex;
+            color: green;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            width: 70px;
+            height: 80px;
+            background-color: hotpink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 36px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <h1>
+        local Storage
+    </h1>
+    <input type="text" name="" class="name"><br>
+    <h2> my name is <span class="name-tag"></span></h2>
+
+    <input type="text" class="age">
+    <h2> I am <span class="age-tag"></span> years old</h2> -->
+
+    <!-- <h1>Append-Child &append</h1>
+    <div class="container">
+        <div class="card">1</div>
+    </div> -->
+    <h1>callbackHell</h1>
+
+    <table border="2 " align='center' cellpadding="2" borderColor="red">
+        <tr>
+            <th> Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Anurag</td>
+            <td id="math"></td>
+            <td id="mathMarks"></td>
+        </tr>
+        <tr>
+            <td id="science"></td>
+            <td id="scienceMarks"></td>
+        </tr>
+        <tr>
+            <td id="english"></td>
+            <td id="englishMarks"></td>
+        </tr>
+    </table>
+
+    <p id="e_name">Employee-Name </p>
+    <p id="e_post">Post</p>
+    <p id='e_sal'>Salary</p>
+    <p id="calTax"></p>
+    <!-- <script>
+        let firstSub = prompt('Enter First subject')
+        let secondSub = prompt('Enter second subject')
+        let thirdSub = prompt('Enter third subject')
+
+        let firstSubMarks = prompt('Enter First subject Marks')
+        let secondSubMarks = prompt('Enter second subject Marks')
+        let thirdSubMarks = prompt('Enter third subject Marks')
+
+        document.getElementById('math').innerHTML = firstSub
+        document.getElementById('science').innerHTML = secondSub
+        document.getElementById('english').innerHTML = thirdSub
+
+        document.getElementById('mathMarks').innerHTML = firstSubMarks
+        document.getElementById('scienceMarks').innerHTML = secondSubMarks
+        document.getElementById('englishMarks').innerHTML = thirdSubMarks
+    </script> -->
+    <script>
+        let name = prompt('Enter Name');
+        let post = prompt('Enter Post');
+        let salary = Number(prompt('Enter Salary'));
+        document.getElementById('e_name').innerHTML = `Employee Name : ${name}`;
+        document.getElementById('e_post').innerHTML = `Employee Post : ${post}`;
+        document.getElementById('e_sal').innerHTML = `Employee Salary : ${salary}`;
+
+        let calTax = ((salary * 10) / 100)
+        document.getElementById('calTax').innerHTML = `Tax : ${calTax}`
+
+        console.log(typeof calTax)
+    </script>
+</body>
+
+
+</html>

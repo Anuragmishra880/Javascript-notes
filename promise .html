@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="resolve-btn">Resolve</button>
+  <button id="reject-btn">Reject</button>
+  <script>
+    const resolveBtn = document.querySelector('#resolve-btn')
+    const rejectBtn = document.querySelector('#reject-btn')
+
+    const p = new Promise((resolve, reject) => {
+      resolveBtn.addEventListener('click', () => {
+        resolve('Promise Resolved')
+      })
+
+      rejectBtn.addEventListener('click', () => {
+        reject('Promise Rejected')
+      })
+    })
+
+    p.then((data) => {
+      console.log(data);
+      return 155
+    }).then((data) => {
+      console.log(data);
+      return 'Anurag'
+    }).then((data) => {
+      console.log(data);
+    }).catch(err => {
+      console.log(err);
+    })
+  </script>
+</body>
+
+</html>
